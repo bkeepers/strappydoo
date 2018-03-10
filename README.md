@@ -1,4 +1,4 @@
-# strappydoo
+![strappydoo](https://user-images.githubusercontent.com/10660468/37246132-814011d0-2471-11e8-9d02-81d7085565af.png)
 
 > a command line tool that provides bootstrap scripts to run all projects
 
