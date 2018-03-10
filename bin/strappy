@@ -23,12 +23,15 @@ usage(){
 }
 
 run() {
+  # Loop through all available plugins
   for path in $plugins/*.sh; do
+    # Source the plugin, continue if it returns anything besides 0
     . $path || continue
 
     plugin=$(basename $path .sh)
     cmd="${plugin}_${subcommand}"
 
+    # Run the command if the plugin defines a function for it
     fn_exists $cmd && $cmd
   done
 }
