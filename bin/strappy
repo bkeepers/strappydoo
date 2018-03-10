@@ -3,12 +3,12 @@
 # Run with DEBUG=1 to print all executed commands
 test -z $DEBUG || set -x
 
-set -u # Warn when referencing an unset variable
-set -e # Exit immediately if command exists with non-zero status
-
 plugins="$(dirname $0)/../plugins"
 progname=$(basename $0)
 subcommand=$1
+
+set -u # Warn when referencing an unset variable
+set -e # Exit immediately if command exists with non-zero status
 
 usage(){
   echo "Usage: $progname <subcommand> [options]"
