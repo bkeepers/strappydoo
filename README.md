@@ -33,7 +33,6 @@ $ ~/.strappydoo/script/install
 ### TODO
 
 - [ ] allow sourcing aliases in shell startup scripts (e.g. `source $(strappy aliases)`)
-- [ ] Installation instructions
 - [ ] Add support for other common languages/frameworks
 - [ ] Make it easy to register custom plugins
 - [ ] Distribute via homebrew
