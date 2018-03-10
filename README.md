@@ -15,10 +15,10 @@ $ ~/.strappydoo/script/install
 
 ### Usage
 
-- `strappy bootstrap` - Bootstrap dependencies"
-- `strappy console` - Start an interactive console"
-- `strappy server` - Start the server"
-- `strappy test` - Run the tests"
+- `strappy bootstrap` - Bootstrap dependencies
+- `strappy console` - Start an interactive console
+- `strappy server` - Start the server
+- `strappy test` - Run the tests
 
 ### Supported languages & frameworks
 
