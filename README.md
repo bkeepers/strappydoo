@@ -1,4 +1,4 @@
-# Strappy-Doo
+# strappydoo
 
 > a command line tool that provides bootstrap scripts to run all projects
 
