@@ -1,9 +1,0 @@
-#!/bin/sh
-
-if [ -f ./script/bootstrap ]; then
-  ./script/bootstrap $@
-elif [ -f Gemfile ]; then
-  bundle install $@
-elif [ -f ./package.json ]; then
-  npm install $@
-fi

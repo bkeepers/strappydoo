@@ -1,9 +1,0 @@
-#!/bin/sh
-
-if [ -f ./script/test ]; then
-  ./script/test $@
-elif [ -f ./bin/rails ]; then
-  ./bin/rails test $@
-elif [ -f ./package.json ]; then
-  npm test $@
-fi

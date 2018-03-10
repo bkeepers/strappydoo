@@ -1,0 +1,47 @@
+#!/bin/sh
+
+# Run with DEBUG=1 to print all executed commands
+test -z $DEBUG || set -x
+
+set -u # Warn when referencing an unset variable
+set -e # Exit immediately if command exists with non-zero status
+
+plugins="$(dirname $0)/../plugins"
+progname=$(basename $0)
+subcommand=$1
+
+usage(){
+  echo "Usage: $progname <subcommand> [options]"
+  echo ""
+  echo "Subcommands:"
+  echo "  bootstrap   Bootstrap dependencies"
+  echo "  console     Start an interactive console"
+  echo "  server      Start the server"
+  echo "  test        Run the tests"
+  echo ""
+}
+
+run() {
+  for path in $plugins/*.sh; do
+    . $path || continue
+
+    plugin=$(basename $path .sh)
+    cmd="${plugin}_${subcommand}"
+
+    fn_exists $cmd && $cmd
+  done
+}
+
+fn_exists() {
+  declare -f -F $1 > /dev/null
+  return $?
+}
+
+case $subcommand in
+  "bootstrap" | "server" | "test" | "console")
+    run $subcommand
+    ;;
+  *)
+    usage
+    ;;
+esac

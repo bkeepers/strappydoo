@@ -8,10 +8,10 @@ This project is an abstraction of the [Scripts to Rule Them All](https://githube
 
 ### Usage
 
-- `sb` - Bootstrap the projects dependencies
-- `ss` - start a server
-- `st` - run the tests
-- `sc` - start an interactive console
+- `strappy bootstrap` - Bootstrap the projects dependencies
+- `strappy server` - start a server
+- `strappy test` - run the tests
+- `strappy console` - start an interactive console
 
 ## Installation
 
@@ -21,14 +21,15 @@ TODO
 
 - [x] Rails
 - [x] NPM
+- [x] Homebrew
+- [x] script/*
 - [ ] Ruby (Gemfile, Rack, minitest, etc)
 - [ ] Python (Django, …)
 - [ ] ???
 
 ### TODO
 
-- [ ] Extract support for each language/library into plugins
-- [ ] Add full command (`strappy server`) and allow sourcing aliases in shell startup scripts (e.g. `source $(strappy aliases)`)
+- [ ] allow sourcing aliases in shell startup scripts (e.g. `source $(strappy aliases)`)
 - [ ] Installation instructions
 - [ ] Add support for other common languages/frameworks
 - [ ] Make it easy to register custom plugins
