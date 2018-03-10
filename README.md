@@ -62,6 +62,7 @@ scrappy_test() {
 
 ### TODO
 
+- [ ] tests
 - [ ] allow sourcing aliases in shell startup scripts (e.g. `source $(strappy aliases)`)
 - [ ] Add support for other common languages/frameworks
 - [ ] Make it easy to register custom plugins
