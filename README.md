@@ -1,6 +1,8 @@
-# StrapStrap
+# Strappy-Doo
 
-StrapStrap is a command line tool that provides boot**strap** **s**cripts **t**o **r**un **a**ll **p**rojects. It makes it easy to switch between projects that are written in different languages without having to remember how each language handles common tasks like installint dependencies, starting a server, and running the tests.
+> a command line tool that provides bootstrap scripts to run all projects
+
+Easily switch between projects that are written in different languages without having to remember how each language handles common tasks like installing dependencies, starting a server, and running the tests.
 
 This project is an abstraction of the [Scripts to Rule Them All](https://githubengineering.com/scripts-to-rule-them-all/) pattern that is common at GitHub.
 
@@ -25,9 +27,8 @@ TODO
 
 ### TODO
 
-- [ ] Come up with a better name. I like "Scripts to run all projects", but [strap](https://github.com/mikemcquaid/strap) is already a thing
 - [ ] Extract support for each language/library into plugins
-- [ ] Add full command (`strap server`) and allow sourcing aliases in shell startup scripts (e.g. `source $(strap aliases)`)
+- [ ] Add full command (`strappy server`) and allow sourcing aliases in shell startup scripts (e.g. `source $(strappy aliases)`)
 - [ ] Installation instructions
 - [ ] Add support for other common languages/frameworks
 - [ ] Make it easy to register custom plugins
