@@ -16,6 +16,7 @@ $ ~/.strappydoo/script/install
 ### Usage
 
 - `strappy bootstrap` - Bootstrap dependencies"
+- `strappy setup` - Set up the project's initial state"
 - `strappy console` - Start an interactive console"
 - `strappy server` - Start the server"
 - `strappy test` - Run the tests"
