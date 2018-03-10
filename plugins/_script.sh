@@ -21,3 +21,8 @@ _script_console() {
   script/console
   exit $? # Don't attempt to run any other plugins if this is defined
 }
+
+_script_setup() {
+  script/setup
+  exit $? # Don't attempt to run any other plugins if this is defined
+}
