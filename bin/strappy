@@ -39,7 +39,7 @@ fn_exists() {
 }
 
 case $subcommand in
-  "bootstrap" | "server" | "test" | "console")
+  "bootstrap" | "server" | "test" | "console" | "setup")
     run $subcommand
     ;;
   *)
