@@ -6,29 +6,33 @@ Easily switch between projects that are written in different languages without h
 
 This project is an abstraction of the [Scripts to Rule Them All](https://githubengineering.com/scripts-to-rule-them-all/) pattern that is common at GitHub.
 
-### Usage
-
-- `sb` - Bootstrap the projects dependencies
-- `ss` - start a server
-- `st` - run the tests
-- `sc` - start an interactive console
-
 ## Installation
 
-TODO
+```
+$ git clone https://github.com/bkeepers/strappydoo.git ~/.strappydoo
+$ ~/.strappydoo/script/install
+```
+
+### Usage
+
+- `strappy bootstrap` - Bootstrap dependencies"
+- `strappy console` - Start an interactive console"
+- `strappy server` - Start the server"
+- `strappy test` - Run the tests"
 
 ### Supported languages & frameworks
 
 - [x] Rails
 - [x] NPM
+- [x] Homebrew
+- [x] script/*
 - [ ] Ruby (Gemfile, Rack, minitest, etc)
 - [ ] Python (Django, …)
 - [ ] ???
 
 ### TODO
 
-- [ ] Extract support for each language/library into plugins
-- [ ] Add full command (`strappy server`) and allow sourcing aliases in shell startup scripts (e.g. `source $(strappy aliases)`)
+- [ ] allow sourcing aliases in shell startup scripts (e.g. `source $(strappy aliases)`)
 - [ ] Installation instructions
 - [ ] Add support for other common languages/frameworks
 - [ ] Make it easy to register custom plugins

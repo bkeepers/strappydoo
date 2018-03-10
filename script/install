@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd $(dirname $0)/..
+
+ln -sf $(pwd)/bin/strappy /usr/local/bin/
