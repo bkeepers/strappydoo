@@ -2,4 +2,16 @@
 
 cd $(dirname $0)/..
 
-ln -sf $(pwd)/bin/strappy /usr/local/bin/
+
+target="$(pwd)/bin/strappy"
+destination="/usr/local/bin/strappy"
+
+read -d '' cmd <<-EOF
+#!/bin/sh
+
+$target "\$@"
+EOF
+
+rm -f $destination
+echo "$cmd" > $destination
+chmod +x $destination
