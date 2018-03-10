@@ -15,6 +15,7 @@ usage(){
   echo ""
   echo "Subcommands:"
   echo "  bootstrap   Bootstrap dependencies"
+  echo "  setup       Set up the project's initial state"
   echo "  console     Start an interactive console"
   echo "  server      Start the server"
   echo "  test        Run the tests"
