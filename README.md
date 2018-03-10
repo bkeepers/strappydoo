@@ -6,16 +6,19 @@ Easily switch between projects that are written in different languages without h
 
 This project is an abstraction of the [Scripts to Rule Them All](https://githubengineering.com/scripts-to-rule-them-all/) pattern that is common at GitHub.
 
-### Usage
-
-- `strappy bootstrap` - Bootstrap the projects dependencies
-- `strappy server` - start a server
-- `strappy test` - run the tests
-- `strappy console` - start an interactive console
-
 ## Installation
 
-TODO
+```
+$ git clone https://github.com/bkeepers/strappydoo.git ~/.strappydoo
+$ ~/.strappydoo/script/install
+```
+
+### Usage
+
+- `strappy bootstrap` - Bootstrap dependencies"
+- `strappy console` - Start an interactive console"
+- `strappy server` - Start the server"
+- `strappy test` - Run the tests"
 
 ### Supported languages & frameworks
 
