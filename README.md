@@ -13,7 +13,7 @@ $ git clone https://github.com/bkeepers/strappydoo.git ~/.strappydoo
 $ ~/.strappydoo/script/install
 ```
 
-### Usage
+## Usage
 
 - `strappy bootstrap` - Bootstrap dependencies
 - `strappy setup` - Set up the project's initial state
@@ -32,24 +32,29 @@ alias st="strappy test"
 
 Now when you clone and start working on a new project, you can  run `sb` to install dependencies, `ss` to start the server, and `st` to run the tests.
 
-### Supported languages & frameworks
+## Supported languages & frameworks
 
-- [x] script/*
-- [x] Homebrew
-- Ruby
-  - [x] rbenv
-  - [x] Bundler
-  - [x] Rails
-  - [ ] `rake test`
-- Node
-  - [x] nodenv
-  - [ ] yarn
-  - [x] NPM
-- [x] .NET core
-- [ ] Python (Django, …)
-- [ ] ???
+`scrappy` should _just work_ with all of these tools:
 
-Want to add support for another language or framework? Just [create a file in `plugins/`](https://github.com/bkeepers/strappydoo/new/master/plugins). Here's an example for a fictional framework called `scrappy`, defined in `plugins/3-scrappy.sh`:
+- `script/{bootstrap,setup,console,server,test}` - Uses any existing [Scripts To Rule Them All](https://github.com/github/scripts-to-rule-them-all) in place of everything else
+
+- [brew bundle](https://github.com/Homebrew/homebrew-bundle) - Installs dependencies listed in `Brewfile` from Homebrew during `bootstrap`
+
+- [nodenv](https://github.com/nodenv/nodenv) - Installs the Node version defined in `.node-verson` during `bootstrap`
+
+- [rbenv](https://github.com/rbenv/rbenv) - Installs the Ruby version defined in `.ruby-verson` during `bootstrap`
+
+- [bundler](http://bundler.io/) - Installs Ruby dependencies declared in `Gemfile` during `bootstrap`
+
+- [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) - Uses `dotnet` CLI to restore dependencies and run the server and tests
+
+- [npm](https://www.npmjs.com/) - Runs `npm install` to install dependencies during `bootstrap`
+
+- [rails](http://rubyonrails.org/) - Uses `bin/rails` to run the server, tests, and console
+
+## Adding new plugins
+
+Want to add support for another language or framework? [Create a script in `plugins/`](https://github.com/bkeepers/strappydoo/new/master/plugins). Here's an example for a fictional framework called `scrappy`, defined in `plugins/3-scrappy.sh`:
 
 ```sh
 #!/usr/bin/env bash
@@ -57,7 +62,7 @@ Want to add support for another language or framework? Just [create a file in `p
 # Test if Scrappyfile exists or return 1 to disable this plugin
 test -f Scrappyfile || return 1
 
-# Now define a function called `{framework}_${command}` that runs the relevant command for each of:
+# Now define a function called `${framework}_${command}` that runs the relevant command for each of:
 #
 # - bootstrap
 # - server
@@ -78,16 +83,9 @@ scrappy_test() {
 }
 ```
 
-Prefix all scripts with a number that coincides with the type of tool:
+Scripts are run in order, so prefix them with a number that coincides with the type of tool:
 
-- 0 - Manual overrides
-- 1 - System libraries
-- 2 - Programming languages
-- 3 - Programming frameworks
-
-### TODO
-
-- [ ] tests
-- [ ] Add support for other common languages/frameworks
-- [ ] Make it easy to register custom plugins
-- [ ] Distribute via homebrew
+- `0-mytool.sh` - Manual overrides
+- `1-mytool.sh` - System libraries
+- `2-mytool.sh` - Programming languages
+- `3-mytool.sh` - Programming frameworks
