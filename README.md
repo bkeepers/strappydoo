@@ -54,7 +54,7 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 - [yarn](https://yarnpkg.com/) - Uses `yarn` to install dependencies and run the server and tests
 
-- [mix](https://hexdocs.pm/mix/Mix.html) - Uses `mix` install dependencies and run the console and tests
+- [mix](https://hexdocs.pm/mix/Mix.html) - Uses `mix` to install dependencies and run the console and tests
 
 - [phoenix](http://phoenixframework.org/) - Uses `mix` to run the server
 
