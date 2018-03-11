@@ -13,7 +13,3 @@ rails_console() {
 rails_test() {
   bin/rails test
 }
-
-rails_test() {
-  bin/rails console
-}
