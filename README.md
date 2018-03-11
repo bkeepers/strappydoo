@@ -21,6 +21,17 @@ $ ~/.strappydoo/script/install
 - `strappy server` - Start the server
 - `strappy test` - Run the tests
 
+Setup aliases by appending the following to your shell startup scripts (`.profile`, `.bash_profile`, `.zshrc`, etc):
+
+```
+alias sb="strappy bootstrap"
+alias sc="strappy console"
+alias ss="strappy server"
+alias st="strappy test"
+```
+
+Now when you clone and start working on a new project, you can  run `sb` to install dependencies, `ss` to start the server, and `st` to run the tests.
+
 ### Supported languages & frameworks
 
 - [x] NPM
@@ -64,7 +75,6 @@ scrappy_test() {
 ### TODO
 
 - [ ] tests
-- [ ] allow sourcing aliases in shell startup scripts (e.g. `source $(strappy aliases)`)
 - [ ] Add support for other common languages/frameworks
 - [ ] Make it easy to register custom plugins
 - [ ] Distribute via homebrew
