@@ -29,7 +29,7 @@ run() {
     # shellcheck source=/dev/null
     . "$path" || continue
 
-    plugin=$(basename "$path" .sh)
+    plugin=$(basename "$path" .sh | tr -d '[:digit:]-')
     cmd="${plugin}_${subcommand}"
 
     # Run the command if the plugin defines a function for it
