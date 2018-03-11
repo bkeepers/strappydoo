@@ -43,7 +43,7 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 - [ ] Python (Django, …)
 - [ ] ???
 
-Want to add support for another language or framework? Just [create a file in `plugins/`](https://github.com/bkeepers/strappydoo/new/master/plugins). Here's an example for a fictional framework called `scrappy`, defined in `plugins/scrappy.sh`:
+Want to add support for another language or framework? Just [create a file in `plugins/`](https://github.com/bkeepers/strappydoo/new/master/plugins). Here's an example for a fictional framework called `scrappy`, defined in `plugins/3-scrappy.sh`:
 
 ```sh
 #!/usr/bin/env bash
@@ -71,6 +71,13 @@ scrappy_test() {
   scrappy test
 }
 ```
+
+Prefix all scripts with a number that coincides with the type of tool:
+
+- 0 - Manual overrides
+- 1 - System libraries
+- 2 - Programming languages
+- 3 - Programming frameworks
 
 ### TODO
 
