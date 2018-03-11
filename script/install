@@ -6,7 +6,7 @@ target="$(pwd)/bin/strappy"
 destination="/usr/local/bin/strappy"
 
 read -rd '' cmd <<-EOF
-#!/bin/sh
+#!/usr/bin/env bash
 
 $target "\$@"
 EOF

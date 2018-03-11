@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 test -f bin/rails || return 1
 
