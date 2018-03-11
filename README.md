@@ -42,6 +42,8 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 - [nodenv](https://github.com/nodenv/nodenv) - Installs the Node version defined in `.node-verson` during `bootstrap`
 
+- [nvm](https://github.com/creationix/nvm) - Installs the Node version defined in `.nvmrc` during `bootstrap`
+
 - [rbenv](https://github.com/rbenv/rbenv) - Installs the Ruby version defined in `.ruby-verson` during `bootstrap`
 
 - [bundler](http://bundler.io/) - Installs Ruby dependencies declared in `Gemfile` during `bootstrap`
