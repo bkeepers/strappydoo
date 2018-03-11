@@ -48,9 +48,11 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 - [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) - Uses `dotnet` CLI to restore dependencies and run the server and tests
 
-- [npm](https://www.npmjs.com/) - Runs `npm install` to install dependencies during `bootstrap`
+- [npm](https://www.npmjs.com/) - Runs `npm` to install dependencies and run the server and tests
 
 - [rails](http://rubyonrails.org/) - Uses `bin/rails` to run the server, tests, and console
+
+- [yarn](https://yarnpkg.com/) - Uses `yarn` to install dependencies and run the server and tests
 
 ## Adding new plugins
 

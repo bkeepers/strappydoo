@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-test -f package.json || return 1
+(
+  test -f package.json &&
+  test ! -f yarn.lock &&
+  test ! -f .yarnrc
+) || return 1
 
 npm_server() {
   run npm start
