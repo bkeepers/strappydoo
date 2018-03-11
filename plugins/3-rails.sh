@@ -3,13 +3,13 @@
 test -f bin/rails || return 1
 
 rails_server() {
-  bin/rails server
+  run bin/rails server
 }
 
 rails_console() {
-  bin/rails console
+  run bin/rails console
 }
 
 rails_test() {
-  bin/rails test
+  run bin/rails test
 }

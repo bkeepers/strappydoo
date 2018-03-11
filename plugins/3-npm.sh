@@ -3,13 +3,13 @@
 test -f package.json || return 1
 
 npm_server() {
-  npm start
+  run npm start
 }
 
 npm_bootstrap(){
-  npm install
+  run npm install
 }
 
 npm_test() {
-  npm test
+  run npm test
 }

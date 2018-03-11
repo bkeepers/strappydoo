@@ -22,7 +22,7 @@ usage(){
   echo ""
 }
 
-run() {
+run_subcommand() {
   # Loop through all available plugins
   for path in $plugins/*.sh; do
     # Source the plugin, continue if it returns anything besides 0
@@ -42,9 +42,14 @@ fn_exists() {
   return $?
 }
 
+run() {
+  echo "\$ $*"
+  "$@"
+}
+
 case $subcommand in
   "bootstrap" | "server" | "test" | "console" | "setup")
-    run "$subcommand"
+    run_subcommand "$subcommand"
     ;;
   *)
     usage

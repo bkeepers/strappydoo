@@ -3,26 +3,26 @@
 test -f "./script/${1}" || return 1
 
 script_server() {
-  script/server
+  run script/server
   exit $? # Don't attempt to run any other plugins if this is defined
 }
 
 script_bootstrap(){
-  script/bootstrap
+  run script/bootstrap
   exit $? # Don't attempt to run any other plugins if this is defined
 }
 
 script_test() {
-  script/test
+  run script/test
   exit $? # Don't attempt to run any other plugins if this is defined
 }
 
 script_console() {
-  script/console
+  run script/console
   exit $? # Don't attempt to run any other plugins if this is defined
 }
 
 script_setup() {
-  script/setup
+  run script/setup
   exit $? # Don't attempt to run any other plugins if this is defined
 }
