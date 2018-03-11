@@ -11,12 +11,9 @@ npm_bootstrap(){
 }
 
 npm_test() {
-  run npm test
+  test -n "$(grep "\"test\":" package.json)" && run npm test
 }
 
-NPM_START_SCRIPT=$(grep "\"start\":" package.json)
-test -n "$NPM_START_SCRIPT" || return 1
-
 npm_server() {
-  npm start
+  test -n "$(grep "\"start\":" package.json)" && run npm start
 }
