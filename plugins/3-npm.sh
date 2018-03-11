@@ -6,14 +6,14 @@
   test ! -f .yarnrc
 ) || return 1
 
-npm_server() {
-  run npm start
-}
-
 npm_bootstrap(){
   run npm install
 }
 
 npm_test() {
-  run npm test
+  test -n "$(grep "\"test\":" package.json)" && run npm test
+}
+
+npm_server() {
+  test -n "$(grep "\"start\":" package.json)" && run npm start
 }

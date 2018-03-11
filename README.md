@@ -54,6 +54,10 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 - [yarn](https://yarnpkg.com/) - Uses `yarn` to install dependencies and run the server and tests
 
+- [mix](https://hexdocs.pm/mix/Mix.html) - Uses `mix` to install dependencies and run the console and tests
+
+- [phoenix](http://phoenixframework.org/) - Uses `mix` to run the server
+
 ## Adding new plugins
 
 Want to add support for another language or framework? [Create a script in `plugins/`](https://github.com/bkeepers/strappydoo/new/master/plugins). Here's an example for a fictional framework called `scrappy`, defined in `plugins/3-scrappy.sh`:
