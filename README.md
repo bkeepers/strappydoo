@@ -65,16 +65,16 @@ test -f Scrappyfile || return 1
 # - test
 
 scrappy_bootstrap() {
-  scrappy install
+  run scrappy install
 }
 scrappy_server() {
-  scrappy run
+  run scrappy start
 }
 scrappy_console() {
-  scrappy term
+  run scrappy term
 }
 scrappy_test() {
-  scrappy test
+  run scrappy test
 }
 ```
 
