@@ -34,7 +34,7 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 ## Supported languages & frameworks
 
-`scrappy` should _just work_ with all of these tools:
+`strappy` should _just work_ with all of these tools:
 
 - `script/{bootstrap,setup,console,server,test}` - Uses any existing [Scripts To Rule Them All](https://github.com/github/scripts-to-rule-them-all) in place of everything else
 
