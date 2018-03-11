@@ -34,12 +34,17 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 ### Supported languages & frameworks
 
-- [x] NPM
-- [x] Homebrew
-- [x] Rails
-- [x] Bundler
 - [x] script/*
-- [ ] Ruby (Gemfile, Rack, minitest, etc)
+- [x] Homebrew
+- Ruby
+  - [x] rbenv
+  - [x] Bundler
+  - [x] Rails
+  - [ ] `rake test`
+- Node
+  - [ ] nodenv
+  - [ ] yarn
+  - [x] NPM
 - [ ] Python (Django, …)
 - [ ] ???
 
