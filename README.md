@@ -45,6 +45,7 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
   - [ ] nodenv
   - [ ] yarn
   - [x] NPM
+- [x] .NET core
 - [ ] Python (Django, …)
 - [ ] ???
 
