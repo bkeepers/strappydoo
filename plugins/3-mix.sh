@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-test -n mix.exs || return 1
+test -f mix.exs || return 1
 
 mix_bootstrap(){
   mix deps.get
