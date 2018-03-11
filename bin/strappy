@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Run with DEBUG=1 to print all executed commands
-test -z $DEBUG || set -x
+test -z "$DEBUG" || set -x
 
-plugins="$(dirname $0)/../plugins"
-progname=$(basename $0)
+plugins="$(dirname "$0")/../plugins"
+progname=$(basename "$0")
 subcommand=$1
 
 set -u # Warn when referencing an unset variable
@@ -26,24 +26,25 @@ run() {
   # Loop through all available plugins
   for path in $plugins/*.sh; do
     # Source the plugin, continue if it returns anything besides 0
-    . $path || continue
+    # shellcheck source=/dev/null
+    . "$path" || continue
 
-    plugin=$(basename $path .sh)
+    plugin=$(basename "$path" .sh)
     cmd="${plugin}_${subcommand}"
 
     # Run the command if the plugin defines a function for it
-    fn_exists $cmd && $cmd
+    fn_exists "$cmd" && $cmd
   done
 }
 
 fn_exists() {
-  declare -f -F $1 > /dev/null
+  declare -f -F "$1" > /dev/null
   return $?
 }
 
 case $subcommand in
   "bootstrap" | "server" | "test" | "console" | "setup")
-    run $subcommand
+    run "$subcommand"
     ;;
   *)
     usage

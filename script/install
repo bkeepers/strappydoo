@@ -1,12 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-cd $(dirname $0)/..
-
+cd "$(dirname "$0")"/.. || exit
 
 target="$(pwd)/bin/strappy"
 destination="/usr/local/bin/strappy"
 
-read -d '' cmd <<-EOF
+read -rd '' cmd <<-EOF
 #!/bin/sh
 
 $target "\$@"
