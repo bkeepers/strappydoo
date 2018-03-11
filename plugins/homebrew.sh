@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Find Brewfile or brewfile case insensitive
 BREWFILE=$(find . -iname "Brewfile" | head -n 1)

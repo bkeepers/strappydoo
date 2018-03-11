@@ -35,7 +35,7 @@ $ ~/.strappydoo/script/install
 Want to add support for another language or framework? Just [create a file in `plugins/`](https://github.com/bkeepers/strappydoo/new/master/plugins). Here's an example for a fictional framework called `scrappy`, defined in `plugins/scrappy.sh`:
 
 ```sh
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Test if Scrappyfile exists or return 1 to disable this plugin
 test -f Scrappyfile || return 1
