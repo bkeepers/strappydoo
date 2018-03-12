@@ -64,13 +64,13 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 ## Adding new plugins
 
-Want to add support for another language or framework? [Create a script in `plugins/`](https://github.com/bkeepers/strappydoo/new/master/plugins). Here's an example for a fictional framework called `scrappy`, defined in `plugins/3-scrappy.sh`:
+Want to add support for another language or framework? [Create a script in `plugins/`](https://github.com/bkeepers/strappydoo/new/master/plugins). Here's an example for a fictional framework called `shaggy`, defined in `plugins/3-shaggy.sh`:
 
 ```sh
 #!/usr/bin/env bash
 
-# Test if Scrappyfile exists or return 1 to disable this plugin
-test -f Scrappyfile || return 1
+# Test if config file exists or return 1 to disable this plugin
+test -f Shaggyfile || return 1
 
 # Now define a function called `${framework}_${command}` that runs the relevant command for each of:
 #
@@ -79,17 +79,17 @@ test -f Scrappyfile || return 1
 # - console
 # - test
 
-scrappy_bootstrap() {
-  run scrappy install
+shaggy_bootstrap() {
+  run shaggy install
 }
-scrappy_server() {
-  run scrappy start
+shaggy_server() {
+  run shaggy start
 }
-scrappy_console() {
-  run scrappy term
+shaggy_console() {
+  run shaggy term
 }
-scrappy_test() {
-  run scrappy test
+shaggy_test() {
+  run shaggy test
 }
 ```
 
