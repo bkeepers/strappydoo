@@ -60,6 +60,8 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 - [phoenix](http://phoenixframework.org/) - Uses `mix` to run the server
 
+- [composer](https://getcomposer.org/) - Installs PHP dependencies declared in `composer.json` during `bootstrap`
+
 ## Adding new plugins
 
 Want to add support for another language or framework? [Create a script in `plugins/`](https://github.com/bkeepers/strappydoo/new/master/plugins). Here's an example for a fictional framework called `scrappy`, defined in `plugins/3-scrappy.sh`:
