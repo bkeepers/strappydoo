@@ -62,6 +62,8 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 - [composer](https://getcomposer.org/) - Installs PHP dependencies declared in `composer.json` during `bootstrap`
 
+- [laravel](https://laravel.com/) - Uses `artisan` to run the server and console. Uses `vendor/bin/phpunit` to run tests
+
 ## Adding new plugins
 
 Want to add support for another language or framework? [Create a script in `plugins/`](https://github.com/bkeepers/strappydoo/new/master/plugins). Here's an example for a fictional framework called `shaggy`, defined in `plugins/3-shaggy.sh`:
