@@ -3,7 +3,7 @@
 test -f manage.py || return 1
 
 django_server() {
-  run python manage.py server
+  run python manage.py runserver
 }
 
 django_console() {
