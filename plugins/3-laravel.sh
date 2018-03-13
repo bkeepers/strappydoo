@@ -9,7 +9,3 @@ laravel_console() {
 laravel_server() {
   run php artisan serve
 }
-
-laravel_test() {
-  run vendor/bin/phpunit
-}
