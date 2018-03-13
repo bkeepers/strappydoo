@@ -3,13 +3,13 @@
 test -f manage.py || return 1
 
 django_server() {
-  run python manage.py runserver
+  run .venv/bin/python manage.py runserver
 }
 
 django_console() {
-  run python manage.py shell
+  run .venv/bin/python manage.py shell
 }
 
 django_test() {
-  test ! -f pytest.ini && run python manage.py test
+  test ! -f pytest.ini && run .venv/bin/python manage.py test
 }

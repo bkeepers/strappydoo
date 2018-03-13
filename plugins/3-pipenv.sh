@@ -3,5 +3,5 @@
 test -f Pipfile || return 1
 
 pipenv_bootstrap(){
-  run pipenv install --dev
+  run mkdir -p .venv && pipenv install --dev
 }
