@@ -3,13 +3,13 @@
 test -f manage.py || return 1
 
 django_server() {
-  run python manager.py server
+  run python manage.py server
 }
 
 django_console() {
-  run python manager.py shell
+  run python manage.py shell
 }
 
 django_test() {
-  test ! -f pytest.ini && run python manager.py test
+  test ! -f pytest.ini && run python manage.py test
 }
