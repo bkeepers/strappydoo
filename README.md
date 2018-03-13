@@ -50,7 +50,7 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 - [bundler](http://bundler.io/) - Installs Ruby dependencies declared in `Gemfile` during `bootstrap`
 
-- [django](http://bundler.io/) - Uses `manager.py` to run the server, tests, and console
+- [django](https://www.djangoproject.com/) - Uses `manage.py` to run the server, tests, and console
 
 - [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) - Uses `dotnet` CLI to restore dependencies and run the server and tests
 
