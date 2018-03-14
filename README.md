@@ -112,4 +112,5 @@ Scripts are run in order, so prefix them with a number that coincides with the t
 - `0-mytool.sh` - Manual overrides
 - `1-mytool.sh` - System libraries
 - `2-mytool.sh` - Programming languages
-- `3-mytool.sh` - Programming frameworks
+- `3-mytool.sh` - Language-specific package managers
+- `4-mytool.sh` - Language-specific frameworks
