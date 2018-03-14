@@ -43,6 +43,7 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 | [composer](https://getcomposer.org/) | Installs PHP dependencies declared in `composer.json` |
 | [django](https://www.djangoproject.com/) | Uses `manage.py` to run the server, tests, and console |
 | [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) | Uses `dotnet` CLI to restore dependencies and run the server and tests |
+| [gitman](https://gitman.readthedocs.io/) | Uses `gitman` to install generic dependencies using Git |
 | [laravel](https://laravel.com/) | Uses `artisan` to run the server and console |
 | [mix](https://hexdocs.pm/mix/Mix.html) | Uses `mix` to install dependencies and run the console and tests |
 | [nodenv](https://github.com/nodenv/nodenv) | Installs the Node version defined in `.node-verson` |
