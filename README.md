@@ -44,13 +44,23 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 - [nvm](https://github.com/creationix/nvm) - Installs the Node version defined in `.nvmrc` during `bootstrap`
 
+- [pyenv](https://github.com/pyenv/pyenv) - Installs the Python version defined in `.python-verson` during `bootstrap`
+
 - [rbenv](https://github.com/rbenv/rbenv) - Installs the Ruby version defined in `.ruby-verson` during `bootstrap`
 
 - [bundler](http://bundler.io/) - Installs Ruby dependencies declared in `Gemfile` during `bootstrap`
 
+- [django](https://www.djangoproject.com/) - Uses `manage.py` to run the server, tests, and console
+
 - [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) - Uses `dotnet` CLI to restore dependencies and run the server and tests
 
 - [npm](https://www.npmjs.com/) - Runs `npm` to install dependencies and run the server and tests
+
+- [pip](https://pip.pypa.io/en/stable/) - Installs python dependencies declared in `requirements.txt` during `bootstrap`
+
+- [pipenv](https://docs.pipenv.org/) - Installs python dependencies declared in `Pipfile` during `bootstrap`
+
+- [pytest](https://docs.pytest.org/) - Runs the tests with `pytest`
 
 - [rails](http://rubyonrails.org/) - Uses `bin/rails` to run the server, tests, and console
 
