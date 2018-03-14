@@ -36,45 +36,28 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 
 `strappy` should _just work_ with all of these tools:
 
-- `script/{bootstrap,setup,console,server,test}` - Uses any existing [Scripts To Rule Them All](https://github.com/github/scripts-to-rule-them-all) in place of everything else
-
-- [brew bundle](https://github.com/Homebrew/homebrew-bundle) - Installs dependencies listed in `Brewfile` from Homebrew during `bootstrap`
-
-- [nodenv](https://github.com/nodenv/nodenv) - Installs the Node version defined in `.node-verson` during `bootstrap`
-
-- [nvm](https://github.com/creationix/nvm) - Installs the Node version defined in `.nvmrc` during `bootstrap`
-
-- [pyenv](https://github.com/pyenv/pyenv) - Installs the Python version defined in `.python-verson` during `bootstrap`
-
-- [rbenv](https://github.com/rbenv/rbenv) - Installs the Ruby version defined in `.ruby-verson` during `bootstrap`
-
-- [bundler](http://bundler.io/) - Installs Ruby dependencies declared in `Gemfile` during `bootstrap`
-
-- [django](https://www.djangoproject.com/) - Uses `manage.py` to run the server, tests, and console
-
-- [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) - Uses `dotnet` CLI to restore dependencies and run the server and tests
-
-- [npm](https://www.npmjs.com/) - Runs `npm` to install dependencies and run the server and tests
-
-- [pip](https://pip.pypa.io/en/stable/) - Installs python dependencies declared in `requirements.txt` during `bootstrap`
-
-- [pipenv](https://docs.pipenv.org/) - Installs python dependencies declared in `Pipfile` during `bootstrap`
-
-- [pytest](https://docs.pytest.org/) - Runs the tests with `pytest`
-
-- [rails](http://rubyonrails.org/) - Uses `bin/rails` to run the server, tests, and console
-
-- [yarn](https://yarnpkg.com/) - Uses `yarn` to install dependencies and run the server and tests
-
-- [mix](https://hexdocs.pm/mix/Mix.html) - Uses `mix` to install dependencies and run the console and tests
-
-- [phoenix](http://phoenixframework.org/) - Uses `mix` to run the server
-
-- [composer](https://getcomposer.org/) - Installs PHP dependencies declared in `composer.json` during `bootstrap`
-
-- [laravel](https://laravel.com/) - Uses `artisan` to run the server and console
-
-- [phpunit](https://phpunit.de/) - Uses `vendor/bin/phpunit` to run tests
+| Tool | Description |
+| --- | --- |
+| [brew bundle](https://github.com/Homebrew/homebrew-bundle) | Installs dependencies listed in `Brewfile` from Homebrew |
+| [bundler](http://bundler.io/) | Installs Ruby dependencies declared in `Gemfile` |
+| [composer](https://getcomposer.org/) | Installs PHP dependencies declared in `composer.json` |
+| [django](https://www.djangoproject.com/) | Uses `manage.py` to run the server, tests, and console |
+| [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) | Uses `dotnet` CLI to restore dependencies and run the server and tests |
+| [laravel](https://laravel.com/) | Uses `artisan` to run the server and console |
+| [mix](https://hexdocs.pm/mix/Mix.html) | Uses `mix` to install dependencies and run the console and tests |
+| [nodenv](https://github.com/nodenv/nodenv) | Installs the Node version defined in `.node-verson` |
+| [npm](https://www.npmjs.com/) | Runs `npm` to install dependencies and run the server and tests |
+| [nvm](https://github.com/creationix/nvm) | Installs the Node version defined in `.nvmrc` |
+| [phoenix](http://phoenixframework.org/) | Uses `mix` to run the server |
+| [phpunit](https://phpunit.de/) | Uses `vendor/bin/phpunit` to run tests |
+| [pip](https://pip.pypa.io/en/stable/) | Installs python dependencies declared in `requirements.txt` |
+| [pipenv](https://docs.pipenv.org/) | Installs python dependencies declared in `Pipfile` |
+| [pyenv](https://github.com/pyenv/pyenv) | Installs the Python version defined in `.python-verson` |
+| [pytest](https://docs.pytest.org/) | Runs the tests with `pytest` |
+| [rails](http://rubyonrails.org/) | Uses `bin/rails` to run the server, tests, and console |
+| [rbenv](https://github.com/rbenv/rbenv) | Installs the Ruby version defined in `.ruby-verson` |
+| `script/*` | Uses any existing [Scripts To Rule Them All](https://github.com/github/scripts-to-rule-them-all) in place of everything else |
+| [yarn](https://yarnpkg.com/) | Uses `yarn` to install dependencies and run the server and tests |
 
 ## Adding new plugins
 
@@ -112,4 +95,5 @@ Scripts are run in order, so prefix them with a number that coincides with the t
 - `0-mytool.sh` - Manual overrides
 - `1-mytool.sh` - System libraries
 - `2-mytool.sh` - Programming languages
-- `3-mytool.sh` - Programming frameworks
+- `3-mytool.sh` - Language-specific package managers
+- `4-mytool.sh` - Language-specific frameworks
