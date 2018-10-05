@@ -51,8 +51,9 @@ Now when you clone and start working on a new project, you can  run `sb` to inst
 | [nvm](https://github.com/creationix/nvm) | Installs the Node version defined in `.nvmrc` |
 | [phoenix](http://phoenixframework.org/) | Uses `mix` to run the server |
 | [phpunit](https://phpunit.de/) | Uses `vendor/bin/phpunit` to run tests |
-| [pip](https://pip.pypa.io/en/stable/) | Installs python dependencies declared in `requirements.txt` |
-| [pipenv](https://docs.pipenv.org/) | Installs python dependencies declared in `Pipfile` |
+| [pip](https://pip.pypa.io/en/stable/) | Installs Python dependencies declared in `requirements.txt` |
+| [pipenv](https://docs.pipenv.org/) | Installs Python dependencies declared in `Pipfile` |
+| [poetry](https://poetry.eustace.io/) | Installs Python dependencies declared in `poetry.lock` |
 | [pyenv](https://github.com/pyenv/pyenv) | Installs the Python version defined in `.python-verson` |
 | [pytest](https://docs.pytest.org/) | Runs the tests with `pytest` |
 | [rails](http://rubyonrails.org/) | Uses `bin/rails` to run the server, tests, and console |
